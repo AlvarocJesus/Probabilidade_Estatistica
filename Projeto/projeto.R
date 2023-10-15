@@ -1,6 +1,8 @@
 # instalando pacotes
 install.packages("ggplot2")
+install.packages("dgof")
 library(ggplot2)
+library(dgof)
 
 # Ler o arquivo
 df <- read.csv("", header = TRUE, sep=';')
@@ -29,7 +31,12 @@ dX = sqrt(varX)
 dY = sqrt(varY)
 print({ dX, dY })
 
+# sd(df$x)
+# sd(df$y)
+
 # mediana
+medianaX = median(df$x)
+medianaY = median(df$y)
 
 # b)	O histograma de x e y.
 # c)	O boxplot de x e y.
