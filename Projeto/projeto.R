@@ -20,6 +20,10 @@ print(df$x)
 # verificar se tem NA
 any(is.na(df$x))
 
+# Le as colunas do arquivo
+x <- mtcars[, c("mpg")]
+y <- mtcars$mpg
+
 # a)	Média, variância, desvio padrão e mediana para x e y.
 # Média
 mediaX = mean(df$x)
